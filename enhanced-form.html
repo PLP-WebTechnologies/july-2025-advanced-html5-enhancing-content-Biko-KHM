@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form - Bikila Keneni</title>
+</head>
+<body>
+    <header>
+        <h1>Week 2 Assignment: Enhanced HTML5 Page & Form</h1>
+        <p>Prepared by Bikila Keneni</p>
+    </header>
+
+    <main>
+        <!-- Section 1: Lists -->
+        <section>
+            <h2>My Favorite Tools</h2>
+            <ul>
+                <li>VS Code</li>
+                <li>Git & GitHub</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Table -->
+        <section>
+            <h2>Study Timetable</h2>
+            <table border="1" cellpadding="6">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Database Systems</td>
+                        <td>9:00 - 11:00</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Web Development</td>
+                        <td>2:00 - 4:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Algorithms</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 3: Media -->
+        <section>
+            <h2>Motivational Media</h2>
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="Sample image">
+                <figcaption>Keep learning, keep growing 🚀</figcaption>
+            </figure>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
+            </audio>
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </section>
+
+        <!-- Section 4: Enhanced Form -->
+        <section>
+            <h2>Student Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Bikila Keneni" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="yourname@mail.com" autocomplete="on" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+251900000000" pattern="^\+?\d{10,15}$" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" minlength="4" required><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" minlength="6" required><br><br>
+
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="studentid" value="BK12345" readonly><br><br>
+
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select --</option>
+                        <option value="web">Web Development</option>
+                        <option value="db">Database Systems</option>
+                        <option value="ai">Artificial Intelligence</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Preferred Mode of Study:</p>
+                    <input type="radio" id="online" name="mode" value="online" required>
+                    <label for="online">Online</label>
+                    <input type="radio" id="onsite" name="mode" value="onsite">
+                    <label for="onsite">Onsite</label><br><br>
+
+                    <p>Skills I want to improve:</p>
+                    <input type="checkbox" id="html" name="skills" value="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="skills" value="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="python" name="skills" value="python">
+                    <label for="python">Python</label><br><br>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bikila Keneni | HTML5 Assignment</p>
+    </footer>
+</body>
+</html>
